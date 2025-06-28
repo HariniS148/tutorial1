@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'demo.css' %}">
+</head>
+<body>
+    {% block navbar %}
+    <nav>
+        <a href="/homepage">Home</a>
+        <!-- while using anchor tag put / infront of the url-->
+        <a href="/aboutpage">About</a>
+        <a href="{% url 'cn' %}">Contact</a>
+         <!-- cn is the name given for the url contact page in the urls.py page using like will make sure that even if
+        we change the url in thr url in future this name will remain th same thus there wont be any confusion  -->
+    </nav>
+    {% endblock %}
+
+    {% block heading %}
+    <h1>HOME PAGE</h1>
+    {% endblock %}
+
+    {% block para%}
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo odit in expedita delectus dolorem amet fuga reiciendis, 
+        possimus eos rerum totam ut iusto tenetur alias, laudantium nisi deserunt ipsum ipsam et perferendis nemo neque. Sequi, ex veniam? 
+        Quam necessitatibus itaque vero obcaecati illum. 
+    </div>
+    {% endblock %}
+</body>
+</html>

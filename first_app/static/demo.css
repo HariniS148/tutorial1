@@ -1,0 +1,38 @@
+body{
+    background-color: #d8bfd8;
+    font-family: cursive ;
+}
+
+h1{
+    font-style: italic;
+}
+
+pre{
+    font-size: medium;
+    color: black;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none; 
+    gap: 25px;
+}
+
+a{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 75px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+    background-color: coral;
+    color: brown;
+}
+a:hover{
+    background-color: chartreuse;
+    transition: 3s ease-in-out;
+}

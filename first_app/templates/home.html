@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-decoration: none; 
+            gap: 25px;
+        }
+        a{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 75px;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            font-family: cursive;
+            background-color: coral;
+            color: brown;
+        }
+        a:hover{
+            background-color: chartreuse;
+            transition: 3s ease-in-out;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/homepage">Home</a>  -->
+        <!-- while using anchor tag put / infront of the url-->
+        
+         <!-- <a href="/aboutpage">About</a>
+        <a href="/contactpage">Contact</a>
+
+    </nav> -->
+
+{% extends "layout.html" %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'demo.css' %}">
+
+</head>
+
+<body>
+    {% block heading %}
+    <h1>HOME PAGE</h1>
+    {% endblock %}
+
+    {% block para %}
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo odit in expedita delectus dolorem amet fuga reiciendis, 
+        possimus eos rerum totam ut iusto tenetur alias, laudantium nisi deserunt ipsum ipsam et perferendis nemo neque. Sequi, ex veniam? 
+        Quam necessitatibus itaque vero obcaecati illum. Accusantium unde error deserunt? Illum doloribus facere cupiditate libero expedita 
+        iusto ut rerum! Qui recusandae pariatur, illum placeat tempora sed rerum nemo nihil quo nisi totam perspiciatis nostrum dolore 
+        voluptate ad. Vel, et quae id, dicta alias sunt molestiae ab debitis dignissimos, consequuntur nam at rerum. Quidem deleniti quisquam
+        tenetur adipisci nobis, perferendis doloremque illo qui?
+    </div>
+    {% endblock %}
+</body>
+</html>
